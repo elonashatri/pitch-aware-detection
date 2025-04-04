@@ -293,3 +293,55 @@ Most common pitches by position:
   unpitchedPercussionClef1, S3: C5 (MIDI 72), 1900/1900 notes (100.0%)
   unpitchedPercussionClef1, S4: E5 (MIDI 76), 8/14 notes (57.1%)
   unpitchedPercussionClef1, S5: G5 (MIDI 79), 903/903 notes (100.0%)
+
+
+
+
+  omr_benchmark) es314@whitby:~/pitch-aware-detection$ python stats-only/inlink-outlink-relationships-stats.py 
+
+=== Inlink Class Relationships ===
+        SourceClass      TargetClass   Count
+1145  noteheadBlack             stem  787285
+1125  noteheadBlack    noteheadBlack  507095
+1093  noteheadBlack             beam  306056
+1762           stem             stem  215251
+1122  noteheadBlack       kStaffLine  186552
+1753           stem             beam  140177
+1144  noteheadBlack             slur   95926
+1037     kStaffLine             stem   86142
+1092  noteheadBlack          barline   63955
+1029     kStaffLine             beam   57061
+1148  noteheadBlack              tie   49621
+1079  noteheadBlack  accidentalSharp   49333
+1077  noteheadBlack   accidentalFlat   46522
+1761           stem             slur   45928
+1137  noteheadBlack          rest8th   45517
+1250   noteheadHalf             stem   43480
+497            beam             stem   39827
+1126  noteheadBlack     noteheadHalf   36749
+1117  noteheadBlack        flag8thUp   36533
+1140  noteheadBlack        restWhole   33415
+
+=== Outlink Class Relationships ===
+        SourceClass      TargetClass   Count
+1145  noteheadBlack             stem  787285
+1125  noteheadBlack    noteheadBlack  507095
+1093  noteheadBlack             beam  306056
+1762           stem             stem  215251
+1122  noteheadBlack       kStaffLine  186552
+1753           stem             beam  140177
+1144  noteheadBlack             slur   95926
+1037     kStaffLine             stem   86142
+1092  noteheadBlack          barline   63955
+1029     kStaffLine             beam   57061
+1148  noteheadBlack              tie   49621
+1079  noteheadBlack  accidentalSharp   49333
+1077  noteheadBlack   accidentalFlat   46522
+1761           stem             slur   45928
+1137  noteheadBlack          rest8th   45517
+1250   noteheadHalf             stem   43480
+497            beam             stem   39827
+1126  noteheadBlack     noteheadHalf   36749
+1117  noteheadBlack        flag8thUp   36533
+1140  noteheadBlack        restWhole   33415
+(omr_benchmark) es314@whitby:~/pitch-aware-detection$ 
