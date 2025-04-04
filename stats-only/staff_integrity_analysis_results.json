@@ -1,0 +1,1876 @@
+{
+  "timestamp": "2025-04-04T09:24:08.112730",
+  "data_directory": "/homes/es314/omr-objdet-benchmark/data/annotations",
+  "completeness": {
+    "total_staves": 66593,
+    "complete_staves": 63925,
+    "incomplete_staves": 2668,
+    "staffline_counts": {
+      "1": 2642,
+      "2": 3,
+      "3": 2,
+      "4": 8,
+      "5": 63925,
+      "6": 7,
+      "7": 2,
+      "8": 2,
+      "9": 2
+    }
+  },
+  "naming_patterns": {
+    "L5": 60904,
+    "L4": 60912,
+    "L3": 60914,
+    "L2": 60917,
+    "L1": 60917,
+    "L8": 4,
+    "L7": 6,
+    "L6": 13,
+    "L9": 2
+  },
+  "spacing_analysis": {
+    "mean_height": 78.35172241247204,
+    "mean_width": 1910.5500148551234,
+    "mean_spacing": 18.878861792250166,
+    "min_spacing": 1.0,
+    "max_spacing": 34.0,
+    "mean_spacing_std": 0.3504044987260346,
+    "spacing_percentiles": {
+      "5%": 12.5,
+      "25%": 18.0,
+      "50%": 19.25,
+      "75%": 20.75,
+      "95%": 22.0
+    }
+  },
+  "pitch_analysis": {
+    "total_notes": 919984,
+    "position_to_pitch": {
+      "cClef_L-1": {
+        "midi_pitch": 43,
+        "note_name": "G2",
+        "count": 35,
+        "percentage": 68.62745098039215,
+        "clef": "cClef",
+        "position": "L-1"
+      },
+      "cClef_L-2": {
+        "midi_pitch": 39,
+        "note_name": "D#2",
+        "count": 5,
+        "percentage": 41.66666666666667,
+        "clef": "cClef",
+        "position": "L-2"
+      },
+      "cClef_L-3": {
+        "midi_pitch": 38,
+        "note_name": "D2",
+        "count": 5,
+        "percentage": 55.55555555555556,
+        "clef": "cClef",
+        "position": "L-3"
+      },
+      "cClef_L-4": {
+        "midi_pitch": 35,
+        "note_name": "B1",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "cClef",
+        "position": "L-4"
+      },
+      "cClef_L0": {
+        "midi_pitch": 50,
+        "note_name": "D3",
+        "count": 541,
+        "percentage": 62.9802095459837,
+        "clef": "cClef",
+        "position": "L0"
+      },
+      "cClef_L1": {
+        "midi_pitch": 54,
+        "note_name": "F#3",
+        "count": 1074,
+        "percentage": 50.49365303244006,
+        "clef": "cClef",
+        "position": "L1"
+      },
+      "cClef_L2": {
+        "midi_pitch": 57,
+        "note_name": "A3",
+        "count": 2707,
+        "percentage": 64.88494726749761,
+        "clef": "cClef",
+        "position": "L2"
+      },
+      "cClef_L3": {
+        "midi_pitch": 60,
+        "note_name": "C4",
+        "count": 3249,
+        "percentage": 55.13320889190565,
+        "clef": "cClef",
+        "position": "L3"
+      },
+      "cClef_L4": {
+        "midi_pitch": 64,
+        "note_name": "E4",
+        "count": 4164,
+        "percentage": 60.90390522158842,
+        "clef": "cClef",
+        "position": "L4"
+      },
+      "cClef_L5": {
+        "midi_pitch": 67,
+        "note_name": "G4",
+        "count": 3665,
+        "percentage": 64.23063441990887,
+        "clef": "cClef",
+        "position": "L5"
+      },
+      "cClef_L6": {
+        "midi_pitch": 71,
+        "note_name": "B4",
+        "count": 1676,
+        "percentage": 57.95297372060858,
+        "clef": "cClef",
+        "position": "L6"
+      },
+      "cClef_L7": {
+        "midi_pitch": 74,
+        "note_name": "D5",
+        "count": 712,
+        "percentage": 70.49504950495049,
+        "clef": "cClef",
+        "position": "L7"
+      },
+      "cClef_L8": {
+        "midi_pitch": 77,
+        "note_name": "F5",
+        "count": 33,
+        "percentage": 35.1063829787234,
+        "clef": "cClef",
+        "position": "L8"
+      },
+      "cClef_L9": {
+        "midi_pitch": 80,
+        "note_name": "G#5",
+        "count": 2,
+        "percentage": 40.0,
+        "clef": "cClef",
+        "position": "L9"
+      },
+      "cClef_S-1": {
+        "midi_pitch": 48,
+        "note_name": "C3",
+        "count": 310,
+        "percentage": 62.62626262626263,
+        "clef": "cClef",
+        "position": "S-1"
+      },
+      "cClef_S-2": {
+        "midi_pitch": 41,
+        "note_name": "F2",
+        "count": 20,
+        "percentage": 48.78048780487805,
+        "clef": "cClef",
+        "position": "S-2"
+      },
+      "cClef_S-3": {
+        "midi_pitch": 39,
+        "note_name": "D#2",
+        "count": 6,
+        "percentage": 37.5,
+        "clef": "cClef",
+        "position": "S-3"
+      },
+      "cClef_S-4": {
+        "midi_pitch": 36,
+        "note_name": "C2",
+        "count": 1,
+        "percentage": 100.0,
+        "clef": "cClef",
+        "position": "S-4"
+      },
+      "cClef_S0": {
+        "midi_pitch": 52,
+        "note_name": "E3",
+        "count": 772,
+        "percentage": 57.69805680119582,
+        "clef": "cClef",
+        "position": "S0"
+      },
+      "cClef_S1": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 3492,
+        "percentage": 77.08609271523179,
+        "clef": "cClef",
+        "position": "S1"
+      },
+      "cClef_S2": {
+        "midi_pitch": 59,
+        "note_name": "B3",
+        "count": 3486,
+        "percentage": 55.81171950048031,
+        "clef": "cClef",
+        "position": "S2"
+      },
+      "cClef_S3": {
+        "midi_pitch": 62,
+        "note_name": "D4",
+        "count": 4646,
+        "percentage": 65.76079263977354,
+        "clef": "cClef",
+        "position": "S3"
+      },
+      "cClef_S4": {
+        "midi_pitch": 66,
+        "note_name": "F#4",
+        "count": 2712,
+        "percentage": 44.58326483642939,
+        "clef": "cClef",
+        "position": "S4"
+      },
+      "cClef_S5": {
+        "midi_pitch": 69,
+        "note_name": "A4",
+        "count": 2437,
+        "percentage": 60.39653035935564,
+        "clef": "cClef",
+        "position": "S5"
+      },
+      "cClef_S6": {
+        "midi_pitch": 72,
+        "note_name": "C5",
+        "count": 980,
+        "percentage": 58.437686344663085,
+        "clef": "cClef",
+        "position": "S6"
+      },
+      "cClef_S7": {
+        "midi_pitch": 76,
+        "note_name": "E5",
+        "count": 210,
+        "percentage": 53.57142857142857,
+        "clef": "cClef",
+        "position": "S7"
+      },
+      "cClef_S8": {
+        "midi_pitch": 79,
+        "note_name": "G5",
+        "count": 31,
+        "percentage": 64.58333333333334,
+        "clef": "cClef",
+        "position": "S8"
+      },
+      "cClef_S9": {
+        "midi_pitch": 82,
+        "note_name": "A#5",
+        "count": 1,
+        "percentage": 50.0,
+        "clef": "cClef",
+        "position": "S9"
+      },
+      "fClef_L-1": {
+        "midi_pitch": 36,
+        "note_name": "C2",
+        "count": 5098,
+        "percentage": 81.16541951918485,
+        "clef": "fClef",
+        "position": "L-1"
+      },
+      "fClef_L-2": {
+        "midi_pitch": 33,
+        "note_name": "A1",
+        "count": 211,
+        "percentage": 46.88888888888889,
+        "clef": "fClef",
+        "position": "L-2"
+      },
+      "fClef_L-3": {
+        "midi_pitch": 31,
+        "note_name": "G1",
+        "count": 1049,
+        "percentage": 81.76149649259547,
+        "clef": "fClef",
+        "position": "L-3"
+      },
+      "fClef_L-4": {
+        "midi_pitch": 28,
+        "note_name": "E1",
+        "count": 160,
+        "percentage": 56.73758865248227,
+        "clef": "fClef",
+        "position": "L-4"
+      },
+      "fClef_L-5": {
+        "midi_pitch": 24,
+        "note_name": "C1",
+        "count": 47,
+        "percentage": 77.04918032786885,
+        "clef": "fClef",
+        "position": "L-5"
+      },
+      "fClef_L-6": {
+        "midi_pitch": 23,
+        "note_name": "B0",
+        "count": 10,
+        "percentage": 55.55555555555556,
+        "clef": "fClef",
+        "position": "L-6"
+      },
+      "fClef_L-7": {
+        "midi_pitch": 40,
+        "note_name": "E2",
+        "count": 3,
+        "percentage": 75.0,
+        "clef": "fClef",
+        "position": "L-7"
+      },
+      "fClef_L-8": {
+        "midi_pitch": 36,
+        "note_name": "C2",
+        "count": 2,
+        "percentage": 66.66666666666666,
+        "clef": "fClef",
+        "position": "L-8"
+      },
+      "fClef_L0": {
+        "midi_pitch": 40,
+        "note_name": "E2",
+        "count": 4183,
+        "percentage": 57.83215816397069,
+        "clef": "fClef",
+        "position": "L0"
+      },
+      "fClef_L1": {
+        "midi_pitch": 43,
+        "note_name": "G2",
+        "count": 9430,
+        "percentage": 67.44868035190615,
+        "clef": "fClef",
+        "position": "L1"
+      },
+      "fClef_L10": {
+        "midi_pitch": 74,
+        "note_name": "D5",
+        "count": 196,
+        "percentage": 74.24242424242425,
+        "clef": "fClef",
+        "position": "L10"
+      },
+      "fClef_L11": {
+        "midi_pitch": 77,
+        "note_name": "F5",
+        "count": 35,
+        "percentage": 74.46808510638297,
+        "clef": "fClef",
+        "position": "L11"
+      },
+      "fClef_L12": {
+        "midi_pitch": 80,
+        "note_name": "G#5",
+        "count": 33,
+        "percentage": 61.111111111111114,
+        "clef": "fClef",
+        "position": "L12"
+      },
+      "fClef_L13": {
+        "midi_pitch": 85,
+        "note_name": "C#6",
+        "count": 9,
+        "percentage": 42.857142857142854,
+        "clef": "fClef",
+        "position": "L13"
+      },
+      "fClef_L14": {
+        "midi_pitch": 88,
+        "note_name": "E6",
+        "count": 4,
+        "percentage": 57.14285714285714,
+        "clef": "fClef",
+        "position": "L14"
+      },
+      "fClef_L2": {
+        "midi_pitch": 47,
+        "note_name": "B2",
+        "count": 7265,
+        "percentage": 46.039290240811155,
+        "clef": "fClef",
+        "position": "L2"
+      },
+      "fClef_L3": {
+        "midi_pitch": 50,
+        "note_name": "D3",
+        "count": 10433,
+        "percentage": 67.6501102321359,
+        "clef": "fClef",
+        "position": "L3"
+      },
+      "fClef_L4": {
+        "midi_pitch": 53,
+        "note_name": "F3",
+        "count": 7373,
+        "percentage": 46.035214785214784,
+        "clef": "fClef",
+        "position": "L4"
+      },
+      "fClef_L5": {
+        "midi_pitch": 57,
+        "note_name": "A3",
+        "count": 8228,
+        "percentage": 59.6707520487345,
+        "clef": "fClef",
+        "position": "L5"
+      },
+      "fClef_L6": {
+        "midi_pitch": 60,
+        "note_name": "C4",
+        "count": 7073,
+        "percentage": 64.73549331868936,
+        "clef": "fClef",
+        "position": "L6"
+      },
+      "fClef_L7": {
+        "midi_pitch": 64,
+        "note_name": "E4",
+        "count": 2918,
+        "percentage": 48.820478500920196,
+        "clef": "fClef",
+        "position": "L7"
+      },
+      "fClef_L8": {
+        "midi_pitch": 67,
+        "note_name": "G4",
+        "count": 1360,
+        "percentage": 74.27635172037138,
+        "clef": "fClef",
+        "position": "L8"
+      },
+      "fClef_L9": {
+        "midi_pitch": 70,
+        "note_name": "A#4",
+        "count": 423,
+        "percentage": 84.4311377245509,
+        "clef": "fClef",
+        "position": "L9"
+      },
+      "fClef_S-1": {
+        "midi_pitch": 38,
+        "note_name": "D2",
+        "count": 2653,
+        "percentage": 60.11783367323817,
+        "clef": "fClef",
+        "position": "S-1"
+      },
+      "fClef_S-10": {
+        "midi_pitch": 32,
+        "note_name": "G#1",
+        "count": 2,
+        "percentage": 100.0,
+        "clef": "fClef",
+        "position": "S-10"
+      },
+      "fClef_S-2": {
+        "midi_pitch": 35,
+        "note_name": "B1",
+        "count": 919,
+        "percentage": 44.96086105675147,
+        "clef": "fClef",
+        "position": "S-2"
+      },
+      "fClef_S-3": {
+        "midi_pitch": 33,
+        "note_name": "A1",
+        "count": 582,
+        "percentage": 58.0259222333001,
+        "clef": "fClef",
+        "position": "S-3"
+      },
+      "fClef_S-4": {
+        "midi_pitch": 29,
+        "note_name": "F1",
+        "count": 229,
+        "percentage": 57.68261964735516,
+        "clef": "fClef",
+        "position": "S-4"
+      },
+      "fClef_S-5": {
+        "midi_pitch": 26,
+        "note_name": "D1",
+        "count": 75,
+        "percentage": 65.21739130434783,
+        "clef": "fClef",
+        "position": "S-5"
+      },
+      "fClef_S-6": {
+        "midi_pitch": 23,
+        "note_name": "B0",
+        "count": 12,
+        "percentage": 44.44444444444444,
+        "clef": "fClef",
+        "position": "S-6"
+      },
+      "fClef_S-7": {
+        "midi_pitch": 21,
+        "note_name": "A0",
+        "count": 4,
+        "percentage": 40.0,
+        "clef": "fClef",
+        "position": "S-7"
+      },
+      "fClef_S-8": {
+        "midi_pitch": 39,
+        "note_name": "D#2",
+        "count": 2,
+        "percentage": 40.0,
+        "clef": "fClef",
+        "position": "S-8"
+      },
+      "fClef_S-9": {
+        "midi_pitch": 34,
+        "note_name": "A#1",
+        "count": 5,
+        "percentage": 62.5,
+        "clef": "fClef",
+        "position": "S-9"
+      },
+      "fClef_S0": {
+        "midi_pitch": 41,
+        "note_name": "F2",
+        "count": 5181,
+        "percentage": 47.9012573964497,
+        "clef": "fClef",
+        "position": "S0"
+      },
+      "fClef_S1": {
+        "midi_pitch": 45,
+        "note_name": "A2",
+        "count": 7881,
+        "percentage": 62.06489210899354,
+        "clef": "fClef",
+        "position": "S1"
+      },
+      "fClef_S10": {
+        "midi_pitch": 76,
+        "note_name": "E5",
+        "count": 29,
+        "percentage": 46.774193548387096,
+        "clef": "fClef",
+        "position": "S10"
+      },
+      "fClef_S11": {
+        "midi_pitch": 78,
+        "note_name": "F#5",
+        "count": 17,
+        "percentage": 50.0,
+        "clef": "fClef",
+        "position": "S11"
+      },
+      "fClef_S12": {
+        "midi_pitch": 82,
+        "note_name": "A#5",
+        "count": 11,
+        "percentage": 73.33333333333333,
+        "clef": "fClef",
+        "position": "S12"
+      },
+      "fClef_S13": {
+        "midi_pitch": 86,
+        "note_name": "D6",
+        "count": 13,
+        "percentage": 65.0,
+        "clef": "fClef",
+        "position": "S13"
+      },
+      "fClef_S15": {
+        "midi_pitch": 92,
+        "note_name": "G#6",
+        "count": 6,
+        "percentage": 66.66666666666666,
+        "clef": "fClef",
+        "position": "S15"
+      },
+      "fClef_S2": {
+        "midi_pitch": 48,
+        "note_name": "C3",
+        "count": 9110,
+        "percentage": 57.944281897977355,
+        "clef": "fClef",
+        "position": "S2"
+      },
+      "fClef_S3": {
+        "midi_pitch": 52,
+        "note_name": "E3",
+        "count": 9605,
+        "percentage": 55.62956098691069,
+        "clef": "fClef",
+        "position": "S3"
+      },
+      "fClef_S4": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 11462,
+        "percentage": 68.75412392777878,
+        "clef": "fClef",
+        "position": "S4"
+      },
+      "fClef_S5": {
+        "midi_pitch": 59,
+        "note_name": "B3",
+        "count": 6124,
+        "percentage": 45.501151645738915,
+        "clef": "fClef",
+        "position": "S5"
+      },
+      "fClef_S6": {
+        "midi_pitch": 62,
+        "note_name": "D4",
+        "count": 5837,
+        "percentage": 71.21766715470962,
+        "clef": "fClef",
+        "position": "S6"
+      },
+      "fClef_S7": {
+        "midi_pitch": 65,
+        "note_name": "F4",
+        "count": 2297,
+        "percentage": 66.85098952270081,
+        "clef": "fClef",
+        "position": "S7"
+      },
+      "fClef_S8": {
+        "midi_pitch": 69,
+        "note_name": "A4",
+        "count": 405,
+        "percentage": 49.390243902439025,
+        "clef": "fClef",
+        "position": "S8"
+      },
+      "fClef_S9": {
+        "midi_pitch": 72,
+        "note_name": "C5",
+        "count": 66,
+        "percentage": 69.47368421052632,
+        "clef": "fClef",
+        "position": "S9"
+      },
+      "fClef8vb_L-1": {
+        "midi_pitch": 25,
+        "note_name": "C#1",
+        "count": 8,
+        "percentage": 47.05882352941176,
+        "clef": "fClef8vb",
+        "position": "L-1"
+      },
+      "fClef8vb_L-3": {
+        "midi_pitch": 31,
+        "note_name": "G1",
+        "count": 5,
+        "percentage": 100.0,
+        "clef": "fClef8vb",
+        "position": "L-3"
+      },
+      "fClef8vb_L-4": {
+        "midi_pitch": 28,
+        "note_name": "E1",
+        "count": 2,
+        "percentage": 100.0,
+        "clef": "fClef8vb",
+        "position": "L-4"
+      },
+      "fClef8vb_L-5": {
+        "midi_pitch": 24,
+        "note_name": "C1",
+        "count": 3,
+        "percentage": 100.0,
+        "clef": "fClef8vb",
+        "position": "L-5"
+      },
+      "fClef8vb_L0": {
+        "midi_pitch": 28,
+        "note_name": "E1",
+        "count": 135,
+        "percentage": 95.74468085106383,
+        "clef": "fClef8vb",
+        "position": "L0"
+      },
+      "fClef8vb_L1": {
+        "midi_pitch": 31,
+        "note_name": "G1",
+        "count": 440,
+        "percentage": 94.4206008583691,
+        "clef": "fClef8vb",
+        "position": "L1"
+      },
+      "fClef8vb_L2": {
+        "midi_pitch": 35,
+        "note_name": "B1",
+        "count": 481,
+        "percentage": 86.51079136690647,
+        "clef": "fClef8vb",
+        "position": "L2"
+      },
+      "fClef8vb_L3": {
+        "midi_pitch": 38,
+        "note_name": "D2",
+        "count": 546,
+        "percentage": 88.20678513731825,
+        "clef": "fClef8vb",
+        "position": "L3"
+      },
+      "fClef8vb_L4": {
+        "midi_pitch": 42,
+        "note_name": "F#2",
+        "count": 408,
+        "percentage": 70.83333333333334,
+        "clef": "fClef8vb",
+        "position": "L4"
+      },
+      "fClef8vb_L5": {
+        "midi_pitch": 45,
+        "note_name": "A2",
+        "count": 313,
+        "percentage": 77.86069651741293,
+        "clef": "fClef8vb",
+        "position": "L5"
+      },
+      "fClef8vb_L6": {
+        "midi_pitch": 49,
+        "note_name": "C#3",
+        "count": 114,
+        "percentage": 56.15763546798029,
+        "clef": "fClef8vb",
+        "position": "L6"
+      },
+      "fClef8vb_L7": {
+        "midi_pitch": 52,
+        "note_name": "E3",
+        "count": 49,
+        "percentage": 90.74074074074075,
+        "clef": "fClef8vb",
+        "position": "L7"
+      },
+      "fClef8vb_L8": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 5,
+        "percentage": 83.33333333333334,
+        "clef": "fClef8vb",
+        "position": "L8"
+      },
+      "fClef8vb_S-1": {
+        "midi_pitch": 26,
+        "note_name": "D1",
+        "count": 99,
+        "percentage": 98.01980198019803,
+        "clef": "fClef8vb",
+        "position": "S-1"
+      },
+      "fClef8vb_S-3": {
+        "midi_pitch": 33,
+        "note_name": "A1",
+        "count": 2,
+        "percentage": 100.0,
+        "clef": "fClef8vb",
+        "position": "S-3"
+      },
+      "fClef8vb_S-4": {
+        "midi_pitch": 29,
+        "note_name": "F1",
+        "count": 6,
+        "percentage": 100.0,
+        "clef": "fClef8vb",
+        "position": "S-4"
+      },
+      "fClef8vb_S0": {
+        "midi_pitch": 30,
+        "note_name": "F#1",
+        "count": 136,
+        "percentage": 61.81818181818181,
+        "clef": "fClef8vb",
+        "position": "S0"
+      },
+      "fClef8vb_S1": {
+        "midi_pitch": 33,
+        "note_name": "A1",
+        "count": 272,
+        "percentage": 86.07594936708861,
+        "clef": "fClef8vb",
+        "position": "S1"
+      },
+      "fClef8vb_S2": {
+        "midi_pitch": 36,
+        "note_name": "C2",
+        "count": 294,
+        "percentage": 62.95503211991434,
+        "clef": "fClef8vb",
+        "position": "S2"
+      },
+      "fClef8vb_S3": {
+        "midi_pitch": 40,
+        "note_name": "E2",
+        "count": 475,
+        "percentage": 78.38283828382838,
+        "clef": "fClef8vb",
+        "position": "S3"
+      },
+      "fClef8vb_S4": {
+        "midi_pitch": 43,
+        "note_name": "G2",
+        "count": 482,
+        "percentage": 84.26573426573427,
+        "clef": "fClef8vb",
+        "position": "S4"
+      },
+      "fClef8vb_S5": {
+        "midi_pitch": 47,
+        "note_name": "B2",
+        "count": 277,
+        "percentage": 87.93650793650794,
+        "clef": "fClef8vb",
+        "position": "S5"
+      },
+      "fClef8vb_S6": {
+        "midi_pitch": 50,
+        "note_name": "D3",
+        "count": 121,
+        "percentage": 91.66666666666666,
+        "clef": "fClef8vb",
+        "position": "S6"
+      },
+      "fClef8vb_S7": {
+        "midi_pitch": 54,
+        "note_name": "F#3",
+        "count": 4,
+        "percentage": 80.0,
+        "clef": "fClef8vb",
+        "position": "S7"
+      },
+      "gClef_L-1": {
+        "midi_pitch": 57,
+        "note_name": "A3",
+        "count": 5173,
+        "percentage": 68.68029739776952,
+        "clef": "gClef",
+        "position": "L-1"
+      },
+      "gClef_L-10": {
+        "midi_pitch": 30,
+        "note_name": "F#1",
+        "count": 6,
+        "percentage": 66.66666666666666,
+        "clef": "gClef",
+        "position": "L-10"
+      },
+      "gClef_L-11": {
+        "midi_pitch": 28,
+        "note_name": "E1",
+        "count": 1,
+        "percentage": 100.0,
+        "clef": "gClef",
+        "position": "L-11"
+      },
+      "gClef_L-2": {
+        "midi_pitch": 54,
+        "note_name": "F#3",
+        "count": 374,
+        "percentage": 36.92003948667325,
+        "clef": "gClef",
+        "position": "L-2"
+      },
+      "gClef_L-3": {
+        "midi_pitch": 52,
+        "note_name": "E3",
+        "count": 847,
+        "percentage": 62.005856515373345,
+        "clef": "gClef",
+        "position": "L-3"
+      },
+      "gClef_L-4": {
+        "midi_pitch": 48,
+        "note_name": "C3",
+        "count": 247,
+        "percentage": 50.92783505154639,
+        "clef": "gClef",
+        "position": "L-4"
+      },
+      "gClef_L-5": {
+        "midi_pitch": 45,
+        "note_name": "A2",
+        "count": 147,
+        "percentage": 65.91928251121077,
+        "clef": "gClef",
+        "position": "L-5"
+      },
+      "gClef_L-6": {
+        "midi_pitch": 43,
+        "note_name": "G2",
+        "count": 28,
+        "percentage": 51.85185185185185,
+        "clef": "gClef",
+        "position": "L-6"
+      },
+      "gClef_L-7": {
+        "midi_pitch": 40,
+        "note_name": "E2",
+        "count": 49,
+        "percentage": 61.25000000000001,
+        "clef": "gClef",
+        "position": "L-7"
+      },
+      "gClef_L-8": {
+        "midi_pitch": 37,
+        "note_name": "C#2",
+        "count": 17,
+        "percentage": 44.73684210526316,
+        "clef": "gClef",
+        "position": "L-8"
+      },
+      "gClef_L-9": {
+        "midi_pitch": 33,
+        "note_name": "A1",
+        "count": 11,
+        "percentage": 61.111111111111114,
+        "clef": "gClef",
+        "position": "L-9"
+      },
+      "gClef_L0": {
+        "midi_pitch": 60,
+        "note_name": "C4",
+        "count": 8950,
+        "percentage": 60.24501884760366,
+        "clef": "gClef",
+        "position": "L0"
+      },
+      "gClef_L1": {
+        "midi_pitch": 64,
+        "note_name": "E4",
+        "count": 13591,
+        "percentage": 55.010928519388,
+        "clef": "gClef",
+        "position": "L1"
+      },
+      "gClef_L10": {
+        "midi_pitch": 94,
+        "note_name": "A#6",
+        "count": 319,
+        "percentage": 48.70229007633588,
+        "clef": "gClef",
+        "position": "L10"
+      },
+      "gClef_L11": {
+        "midi_pitch": 98,
+        "note_name": "D7",
+        "count": 67,
+        "percentage": 61.46788990825688,
+        "clef": "gClef",
+        "position": "L11"
+      },
+      "gClef_L12": {
+        "midi_pitch": 102,
+        "note_name": "F#7",
+        "count": 20,
+        "percentage": 40.816326530612244,
+        "clef": "gClef",
+        "position": "L12"
+      },
+      "gClef_L13": {
+        "midi_pitch": 104,
+        "note_name": "G#7",
+        "count": 2,
+        "percentage": 33.33333333333333,
+        "clef": "gClef",
+        "position": "L13"
+      },
+      "gClef_L14": {
+        "midi_pitch": 107,
+        "note_name": "B7",
+        "count": 2,
+        "percentage": 40.0,
+        "clef": "gClef",
+        "position": "L14"
+      },
+      "gClef_L15": {
+        "midi_pitch": 111,
+        "note_name": "D#8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "L15"
+      },
+      "gClef_L16": {
+        "midi_pitch": 114,
+        "note_name": "F#8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "L16"
+      },
+      "gClef_L17": {
+        "midi_pitch": 118,
+        "note_name": "A#8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "L17"
+      },
+      "gClef_L18": {
+        "midi_pitch": 121,
+        "note_name": "C#9",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "L18"
+      },
+      "gClef_L2": {
+        "midi_pitch": 67,
+        "note_name": "G4",
+        "count": 21931,
+        "percentage": 64.58081804528992,
+        "clef": "gClef",
+        "position": "L2"
+      },
+      "gClef_L3": {
+        "midi_pitch": 71,
+        "note_name": "B4",
+        "count": 18649,
+        "percentage": 52.36570915115267,
+        "clef": "gClef",
+        "position": "L3"
+      },
+      "gClef_L4": {
+        "midi_pitch": 74,
+        "note_name": "D5",
+        "count": 23198,
+        "percentage": 65.32807659814137,
+        "clef": "gClef",
+        "position": "L4"
+      },
+      "gClef_L5": {
+        "midi_pitch": 77,
+        "note_name": "F5",
+        "count": 13740,
+        "percentage": 45.81832733093238,
+        "clef": "gClef",
+        "position": "L5"
+      },
+      "gClef_L6": {
+        "midi_pitch": 81,
+        "note_name": "A5",
+        "count": 12801,
+        "percentage": 61.012344502168624,
+        "clef": "gClef",
+        "position": "L6"
+      },
+      "gClef_L7": {
+        "midi_pitch": 84,
+        "note_name": "C6",
+        "count": 7446,
+        "percentage": 57.013782542113326,
+        "clef": "gClef",
+        "position": "L7"
+      },
+      "gClef_L8": {
+        "midi_pitch": 88,
+        "note_name": "E6",
+        "count": 3745,
+        "percentage": 52.77621195039459,
+        "clef": "gClef",
+        "position": "L8"
+      },
+      "gClef_L9": {
+        "midi_pitch": 91,
+        "note_name": "G6",
+        "count": 1683,
+        "percentage": 65.51187232386143,
+        "clef": "gClef",
+        "position": "L9"
+      },
+      "gClef_S-1": {
+        "midi_pitch": 59,
+        "note_name": "B3",
+        "count": 5642,
+        "percentage": 51.70928420859683,
+        "clef": "gClef",
+        "position": "S-1"
+      },
+      "gClef_S-10": {
+        "midi_pitch": 33,
+        "note_name": "A1",
+        "count": 16,
+        "percentage": 51.61290322580645,
+        "clef": "gClef",
+        "position": "S-10"
+      },
+      "gClef_S-11": {
+        "midi_pitch": 29,
+        "note_name": "F1",
+        "count": 19,
+        "percentage": 76.0,
+        "clef": "gClef",
+        "position": "S-11"
+      },
+      "gClef_S-12": {
+        "midi_pitch": 26,
+        "note_name": "D1",
+        "count": 2,
+        "percentage": 66.66666666666666,
+        "clef": "gClef",
+        "position": "S-12"
+      },
+      "gClef_S-2": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 3808,
+        "percentage": 69.83311938382542,
+        "clef": "gClef",
+        "position": "S-2"
+      },
+      "gClef_S-3": {
+        "midi_pitch": 53,
+        "note_name": "F3",
+        "count": 788,
+        "percentage": 46.189917936694016,
+        "clef": "gClef",
+        "position": "S-3"
+      },
+      "gClef_S-4": {
+        "midi_pitch": 50,
+        "note_name": "D3",
+        "count": 632,
+        "percentage": 81.02564102564102,
+        "clef": "gClef",
+        "position": "S-4"
+      },
+      "gClef_S-5": {
+        "midi_pitch": 47,
+        "note_name": "B2",
+        "count": 133,
+        "percentage": 46.02076124567474,
+        "clef": "gClef",
+        "position": "S-5"
+      },
+      "gClef_S-6": {
+        "midi_pitch": 43,
+        "note_name": "G2",
+        "count": 108,
+        "percentage": 65.06024096385542,
+        "clef": "gClef",
+        "position": "S-6"
+      },
+      "gClef_S-7": {
+        "midi_pitch": 41,
+        "note_name": "F2",
+        "count": 58,
+        "percentage": 49.152542372881356,
+        "clef": "gClef",
+        "position": "S-7"
+      },
+      "gClef_S-8": {
+        "midi_pitch": 38,
+        "note_name": "D2",
+        "count": 59,
+        "percentage": 78.66666666666666,
+        "clef": "gClef",
+        "position": "S-8"
+      },
+      "gClef_S-9": {
+        "midi_pitch": 34,
+        "note_name": "A#1",
+        "count": 46,
+        "percentage": 63.013698630136986,
+        "clef": "gClef",
+        "position": "S-9"
+      },
+      "gClef_S0": {
+        "midi_pitch": 62,
+        "note_name": "D4",
+        "count": 13221,
+        "percentage": 60.657918884198935,
+        "clef": "gClef",
+        "position": "S0"
+      },
+      "gClef_S1": {
+        "midi_pitch": 65,
+        "note_name": "F4",
+        "count": 13642,
+        "percentage": 48.06567542808822,
+        "clef": "gClef",
+        "position": "S1"
+      },
+      "gClef_S10": {
+        "midi_pitch": 96,
+        "note_name": "C7",
+        "count": 110,
+        "percentage": 49.549549549549546,
+        "clef": "gClef",
+        "position": "S10"
+      },
+      "gClef_S11": {
+        "midi_pitch": 99,
+        "note_name": "D#7",
+        "count": 99,
+        "percentage": 86.08695652173914,
+        "clef": "gClef",
+        "position": "S11"
+      },
+      "gClef_S12": {
+        "midi_pitch": 103,
+        "note_name": "G7",
+        "count": 12,
+        "percentage": 66.66666666666666,
+        "clef": "gClef",
+        "position": "S12"
+      },
+      "gClef_S13": {
+        "midi_pitch": 106,
+        "note_name": "A#7",
+        "count": 2,
+        "percentage": 40.0,
+        "clef": "gClef",
+        "position": "S13"
+      },
+      "gClef_S14": {
+        "midi_pitch": 109,
+        "note_name": "C#8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "S14"
+      },
+      "gClef_S15": {
+        "midi_pitch": 112,
+        "note_name": "E8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "S15"
+      },
+      "gClef_S16": {
+        "midi_pitch": 116,
+        "note_name": "G#8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "S16"
+      },
+      "gClef_S17": {
+        "midi_pitch": 119,
+        "note_name": "B8",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "S17"
+      },
+      "gClef_S18": {
+        "midi_pitch": 123,
+        "note_name": "D#9",
+        "count": 2,
+        "percentage": 50.0,
+        "clef": "gClef",
+        "position": "S18"
+      },
+      "gClef_S2": {
+        "midi_pitch": 69,
+        "note_name": "A4",
+        "count": 102143,
+        "percentage": 89.19929089781768,
+        "clef": "gClef",
+        "position": "S2"
+      },
+      "gClef_S3": {
+        "midi_pitch": 72,
+        "note_name": "C5",
+        "count": 19834,
+        "percentage": 53.49696561024949,
+        "clef": "gClef",
+        "position": "S3"
+      },
+      "gClef_S4": {
+        "midi_pitch": 76,
+        "note_name": "E5",
+        "count": 20302,
+        "percentage": 56.61461238148354,
+        "clef": "gClef",
+        "position": "S4"
+      },
+      "gClef_S5": {
+        "midi_pitch": 79,
+        "note_name": "G5",
+        "count": 18447,
+        "percentage": 60.555427896136294,
+        "clef": "gClef",
+        "position": "S5"
+      },
+      "gClef_S6": {
+        "midi_pitch": 83,
+        "note_name": "B5",
+        "count": 8700,
+        "percentage": 48.36020011117287,
+        "clef": "gClef",
+        "position": "S6"
+      },
+      "gClef_S7": {
+        "midi_pitch": 86,
+        "note_name": "D6",
+        "count": 6237,
+        "percentage": 66.79875763093071,
+        "clef": "gClef",
+        "position": "S7"
+      },
+      "gClef_S8": {
+        "midi_pitch": 89,
+        "note_name": "F6",
+        "count": 1952,
+        "percentage": 46.476190476190474,
+        "clef": "gClef",
+        "position": "S8"
+      },
+      "gClef_S9": {
+        "midi_pitch": 93,
+        "note_name": "A6",
+        "count": 719,
+        "percentage": 61.71673819742489,
+        "clef": "gClef",
+        "position": "S9"
+      },
+      "gClef8va_L10": {
+        "midi_pitch": 95,
+        "note_name": "B6",
+        "count": 8,
+        "percentage": 100.0,
+        "clef": "gClef8va",
+        "position": "L10"
+      },
+      "gClef8va_L11": {
+        "midi_pitch": 98,
+        "note_name": "D7",
+        "count": 8,
+        "percentage": 100.0,
+        "clef": "gClef8va",
+        "position": "L11"
+      },
+      "gClef8va_L2": {
+        "midi_pitch": 67,
+        "note_name": "G4",
+        "count": 2,
+        "percentage": 100.0,
+        "clef": "gClef8va",
+        "position": "L2"
+      },
+      "gClef8va_L4": {
+        "midi_pitch": 86,
+        "note_name": "D6",
+        "count": 15,
+        "percentage": 75.0,
+        "clef": "gClef8va",
+        "position": "L4"
+      },
+      "gClef8va_L5": {
+        "midi_pitch": 89,
+        "note_name": "F6",
+        "count": 15,
+        "percentage": 60.0,
+        "clef": "gClef8va",
+        "position": "L5"
+      },
+      "gClef8va_L6": {
+        "midi_pitch": 93,
+        "note_name": "A6",
+        "count": 14,
+        "percentage": 58.333333333333336,
+        "clef": "gClef8va",
+        "position": "L6"
+      },
+      "gClef8va_L7": {
+        "midi_pitch": 96,
+        "note_name": "C7",
+        "count": 111,
+        "percentage": 82.83582089552239,
+        "clef": "gClef8va",
+        "position": "L7"
+      },
+      "gClef8va_L8": {
+        "midi_pitch": 100,
+        "note_name": "E7",
+        "count": 82,
+        "percentage": 87.2340425531915,
+        "clef": "gClef8va",
+        "position": "L8"
+      },
+      "gClef8va_L9": {
+        "midi_pitch": 92,
+        "note_name": "G#6",
+        "count": 15,
+        "percentage": 57.692307692307686,
+        "clef": "gClef8va",
+        "position": "L9"
+      },
+      "gClef8va_S2": {
+        "midi_pitch": 69,
+        "note_name": "A4",
+        "count": 2,
+        "percentage": 100.0,
+        "clef": "gClef8va",
+        "position": "S2"
+      },
+      "gClef8va_S3": {
+        "midi_pitch": 84,
+        "note_name": "C6",
+        "count": 6,
+        "percentage": 66.66666666666666,
+        "clef": "gClef8va",
+        "position": "S3"
+      },
+      "gClef8va_S4": {
+        "midi_pitch": 88,
+        "note_name": "E6",
+        "count": 25,
+        "percentage": 92.5925925925926,
+        "clef": "gClef8va",
+        "position": "S4"
+      },
+      "gClef8va_S5": {
+        "midi_pitch": 91,
+        "note_name": "G6",
+        "count": 80,
+        "percentage": 77.66990291262135,
+        "clef": "gClef8va",
+        "position": "S5"
+      },
+      "gClef8va_S6": {
+        "midi_pitch": 95,
+        "note_name": "B6",
+        "count": 73,
+        "percentage": 87.95180722891565,
+        "clef": "gClef8va",
+        "position": "S6"
+      },
+      "gClef8va_S7": {
+        "midi_pitch": 98,
+        "note_name": "D7",
+        "count": 141,
+        "percentage": 85.97560975609755,
+        "clef": "gClef8va",
+        "position": "S7"
+      },
+      "gClef8va_S8": {
+        "midi_pitch": 89,
+        "note_name": "F6",
+        "count": 26,
+        "percentage": 74.28571428571429,
+        "clef": "gClef8va",
+        "position": "S8"
+      },
+      "gClef8va_S9": {
+        "midi_pitch": 93,
+        "note_name": "A6",
+        "count": 7,
+        "percentage": 87.5,
+        "clef": "gClef8va",
+        "position": "S9"
+      },
+      "gClef8vb_L-1": {
+        "midi_pitch": 57,
+        "note_name": "A3",
+        "count": 34,
+        "percentage": 100.0,
+        "clef": "gClef8vb",
+        "position": "L-1"
+      },
+      "gClef8vb_L-3": {
+        "midi_pitch": 52,
+        "note_name": "E3",
+        "count": 12,
+        "percentage": 100.0,
+        "clef": "gClef8vb",
+        "position": "L-3"
+      },
+      "gClef8vb_L-4": {
+        "midi_pitch": 48,
+        "note_name": "C3",
+        "count": 6,
+        "percentage": 100.0,
+        "clef": "gClef8vb",
+        "position": "L-4"
+      },
+      "gClef8vb_L-5": {
+        "midi_pitch": 45,
+        "note_name": "A2",
+        "count": 2,
+        "percentage": 100.0,
+        "clef": "gClef8vb",
+        "position": "L-5"
+      },
+      "gClef8vb_L0": {
+        "midi_pitch": 60,
+        "note_name": "C4",
+        "count": 28,
+        "percentage": 41.17647058823529,
+        "clef": "gClef8vb",
+        "position": "L0"
+      },
+      "gClef8vb_L1": {
+        "midi_pitch": 66,
+        "note_name": "F#4",
+        "count": 2933,
+        "percentage": 65.73285522187359,
+        "clef": "gClef8vb",
+        "position": "L1"
+      },
+      "gClef8vb_L2": {
+        "midi_pitch": 62,
+        "note_name": "D4",
+        "count": 5479,
+        "percentage": 85.83738054206485,
+        "clef": "gClef8vb",
+        "position": "L2"
+      },
+      "gClef8vb_L3": {
+        "midi_pitch": 59,
+        "note_name": "B3",
+        "count": 5583,
+        "percentage": 88.31066118316988,
+        "clef": "gClef8vb",
+        "position": "L3"
+      },
+      "gClef8vb_L4": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 4469,
+        "percentage": 71.27591706539074,
+        "clef": "gClef8vb",
+        "position": "L4"
+      },
+      "gClef8vb_L5": {
+        "midi_pitch": 52,
+        "note_name": "E3",
+        "count": 3175,
+        "percentage": 93.79615952732644,
+        "clef": "gClef8vb",
+        "position": "L5"
+      },
+      "gClef8vb_L6": {
+        "midi_pitch": 69,
+        "note_name": "A4",
+        "count": 6,
+        "percentage": 50.0,
+        "clef": "gClef8vb",
+        "position": "L6"
+      },
+      "gClef8vb_S-1": {
+        "midi_pitch": 58,
+        "note_name": "A#3",
+        "count": 34,
+        "percentage": 62.96296296296296,
+        "clef": "gClef8vb",
+        "position": "S-1"
+      },
+      "gClef8vb_S-2": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 32,
+        "percentage": 100.0,
+        "clef": "gClef8vb",
+        "position": "S-2"
+      },
+      "gClef8vb_S-3": {
+        "midi_pitch": 53,
+        "note_name": "F3",
+        "count": 24,
+        "percentage": 85.71428571428571,
+        "clef": "gClef8vb",
+        "position": "S-3"
+      },
+      "gClef8vb_S-4": {
+        "midi_pitch": 50,
+        "note_name": "D3",
+        "count": 10,
+        "percentage": 100.0,
+        "clef": "gClef8vb",
+        "position": "S-4"
+      },
+      "gClef8vb_S0": {
+        "midi_pitch": 67,
+        "note_name": "G4",
+        "count": 2271,
+        "percentage": 29.686274509803923,
+        "clef": "gClef8vb",
+        "position": "S0"
+      },
+      "gClef8vb_S1": {
+        "midi_pitch": 64,
+        "note_name": "E4",
+        "count": 6860,
+        "percentage": 95.86361095584125,
+        "clef": "gClef8vb",
+        "position": "S1"
+      },
+      "gClef8vb_S2": {
+        "midi_pitch": 60,
+        "note_name": "C4",
+        "count": 3633,
+        "percentage": 53.13734093900834,
+        "clef": "gClef8vb",
+        "position": "S2"
+      },
+      "gClef8vb_S3": {
+        "midi_pitch": 57,
+        "note_name": "A3",
+        "count": 5282,
+        "percentage": 90.818431911967,
+        "clef": "gClef8vb",
+        "position": "S3"
+      },
+      "gClef8vb_S4": {
+        "midi_pitch": 54,
+        "note_name": "F#3",
+        "count": 1513,
+        "percentage": 53.36860670194004,
+        "clef": "gClef8vb",
+        "position": "S4"
+      },
+      "gClef8vb_S5": {
+        "midi_pitch": 50,
+        "note_name": "D3",
+        "count": 3872,
+        "percentage": 23.76189015035287,
+        "clef": "gClef8vb",
+        "position": "S5"
+      },
+      "unknown_L-1": {
+        "midi_pitch": 57,
+        "note_name": "A3",
+        "count": 60,
+        "percentage": 98.36065573770492,
+        "clef": "unknown",
+        "position": "L-1"
+      },
+      "unknown_L0": {
+        "midi_pitch": 61,
+        "note_name": "C#4",
+        "count": 61,
+        "percentage": 53.04347826086957,
+        "clef": "unknown",
+        "position": "L0"
+      },
+      "unknown_L1": {
+        "midi_pitch": 64,
+        "note_name": "E4",
+        "count": 252,
+        "percentage": 74.11764705882354,
+        "clef": "unknown",
+        "position": "L1"
+      },
+      "unknown_L2": {
+        "midi_pitch": 67,
+        "note_name": "G4",
+        "count": 250,
+        "percentage": 49.115913555992144,
+        "clef": "unknown",
+        "position": "L2"
+      },
+      "unknown_L3": {
+        "midi_pitch": 70,
+        "note_name": "A#4",
+        "count": 209,
+        "percentage": 32.605304212168484,
+        "clef": "unknown",
+        "position": "L3"
+      },
+      "unknown_L4": {
+        "midi_pitch": 74,
+        "note_name": "D5",
+        "count": 471,
+        "percentage": 67.76978417266187,
+        "clef": "unknown",
+        "position": "L4"
+      },
+      "unknown_L5": {
+        "midi_pitch": 77,
+        "note_name": "F5",
+        "count": 175,
+        "percentage": 30.864197530864196,
+        "clef": "unknown",
+        "position": "L5"
+      },
+      "unknown_L6": {
+        "midi_pitch": 81,
+        "note_name": "A5",
+        "count": 183,
+        "percentage": 66.54545454545455,
+        "clef": "unknown",
+        "position": "L6"
+      },
+      "unknown_L7": {
+        "midi_pitch": 74,
+        "note_name": "D5",
+        "count": 36,
+        "percentage": 37.5,
+        "clef": "unknown",
+        "position": "L7"
+      },
+      "unknown_L8": {
+        "midi_pitch": 88,
+        "note_name": "E6",
+        "count": 13,
+        "percentage": 61.904761904761905,
+        "clef": "unknown",
+        "position": "L8"
+      },
+      "unknown_L9": {
+        "midi_pitch": 91,
+        "note_name": "G6",
+        "count": 2,
+        "percentage": 66.66666666666666,
+        "clef": "unknown",
+        "position": "L9"
+      },
+      "unknown_S-1": {
+        "midi_pitch": 58,
+        "note_name": "A#3",
+        "count": 50,
+        "percentage": 64.93506493506493,
+        "clef": "unknown",
+        "position": "S-1"
+      },
+      "unknown_S-2": {
+        "midi_pitch": 55,
+        "note_name": "G3",
+        "count": 11,
+        "percentage": 78.57142857142857,
+        "clef": "unknown",
+        "position": "S-2"
+      },
+      "unknown_S0": {
+        "midi_pitch": 62,
+        "note_name": "D4",
+        "count": 233,
+        "percentage": 89.61538461538461,
+        "clef": "unknown",
+        "position": "S0"
+      },
+      "unknown_S1": {
+        "midi_pitch": 65,
+        "note_name": "F4",
+        "count": 247,
+        "percentage": 46.082089552238806,
+        "clef": "unknown",
+        "position": "S1"
+      },
+      "unknown_S2": {
+        "midi_pitch": 69,
+        "note_name": "A4",
+        "count": 525,
+        "percentage": 74.04795486600845,
+        "clef": "unknown",
+        "position": "S2"
+      },
+      "unknown_S3": {
+        "midi_pitch": 73,
+        "note_name": "C#5",
+        "count": 224,
+        "percentage": 35.72567783094099,
+        "clef": "unknown",
+        "position": "S3"
+      },
+      "unknown_S4": {
+        "midi_pitch": 76,
+        "note_name": "E5",
+        "count": 290,
+        "percentage": 50.086355785837654,
+        "clef": "unknown",
+        "position": "S4"
+      },
+      "unknown_S5": {
+        "midi_pitch": 79,
+        "note_name": "G5",
+        "count": 140,
+        "percentage": 41.29793510324484,
+        "clef": "unknown",
+        "position": "S5"
+      },
+      "unknown_S6": {
+        "midi_pitch": 82,
+        "note_name": "A#5",
+        "count": 51,
+        "percentage": 30.357142857142854,
+        "clef": "unknown",
+        "position": "S6"
+      },
+      "unknown_S7": {
+        "midi_pitch": 86,
+        "note_name": "D6",
+        "count": 46,
+        "percentage": 73.01587301587301,
+        "clef": "unknown",
+        "position": "S7"
+      },
+      "unknown_S8": {
+        "midi_pitch": 89,
+        "note_name": "F6",
+        "count": 8,
+        "percentage": 80.0,
+        "clef": "unknown",
+        "position": "S8"
+      },
+      "unpitchedPercussionClef1_L5": {
+        "midi_pitch": 77,
+        "note_name": "F5",
+        "count": 38,
+        "percentage": 100.0,
+        "clef": "unpitchedPercussionClef1",
+        "position": "L5"
+      },
+      "unpitchedPercussionClef1_L6": {
+        "midi_pitch": 81,
+        "note_name": "A5",
+        "count": 16,
+        "percentage": 100.0,
+        "clef": "unpitchedPercussionClef1",
+        "position": "L6"
+      },
+      "unpitchedPercussionClef1_S1": {
+        "midi_pitch": 65,
+        "note_name": "F4",
+        "count": 170,
+        "percentage": 100.0,
+        "clef": "unpitchedPercussionClef1",
+        "position": "S1"
+      },
+      "unpitchedPercussionClef1_S2": {
+        "midi_pitch": 71,
+        "note_name": "B4",
+        "count": 5,
+        "percentage": 100.0,
+        "clef": "unpitchedPercussionClef1",
+        "position": "S2"
+      },
+      "unpitchedPercussionClef1_S3": {
+        "midi_pitch": 72,
+        "note_name": "C5",
+        "count": 1900,
+        "percentage": 100.0,
+        "clef": "unpitchedPercussionClef1",
+        "position": "S3"
+      },
+      "unpitchedPercussionClef1_S4": {
+        "midi_pitch": 76,
+        "note_name": "E5",
+        "count": 8,
+        "percentage": 57.14285714285714,
+        "clef": "unpitchedPercussionClef1",
+        "position": "S4"
+      },
+      "unpitchedPercussionClef1_S5": {
+        "midi_pitch": 79,
+        "note_name": "G5",
+        "count": 903,
+        "percentage": 100.0,
+        "clef": "unpitchedPercussionClef1",
+        "position": "S5"
+      }
+    },
+    "most_common_clef": "gClef"
+  }
+}
