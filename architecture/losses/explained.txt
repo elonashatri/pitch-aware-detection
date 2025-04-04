@@ -1,0 +1,30 @@
+Loss Function Design Summary
+These loss functions work together to train our hierarchical music notation detection system:
+
+Detection Losses:
+
+FocalLoss: Addresses class imbalance in musical elements
+BoxRegressionLoss: Regresses bounding boxes with smooth L1 loss
+ClassBalancedLoss: Handles extreme class imbalance using effective number of samples
+
+
+
+Staffline-Specific Losses:
+
+StafflineDetectionLoss: Specialized for detecting thin, horizontal stafflines using heatmaps and offsets
+StaffCompletenessLoss: Enforces the music theory constraint that staves have exactly 5 stafflines with consistent spacing
+
+
+Relationship Losses:
+
+RelationshipLoss: Trains the graph neural network to model connections between musical elements
+RelationshipConsistencyLoss: Enforces domain-specific constraints (like noteheads connect to stems)
+
+
+Hierarchical Detection Loss:
+
+Combines all loss components with appropriate weighting
+Balances detection accuracy, staffline constraints, and relationship modeling
+
+
+
