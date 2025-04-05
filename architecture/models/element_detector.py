@@ -185,18 +185,19 @@ class MusicElementDetector(nn.Module):
             'micro': (micro_cls, micro_reg)
         }
     
+
     def get_anchors(
         self,
-        image_size: Tuple[int, int],
         feature_sizes: Dict[str, Tuple[int, int]],
+        image_size: Tuple[int, int],
         device: str = 'cpu'
     ) -> Dict[str, torch.Tensor]:
         """
         Generate anchors for all scales
         
         Args:
-            image_size: (height, width) of input image
             feature_sizes: Dictionary mapping scale names to feature map sizes
+            image_size: (height, width) of input image
             device: Device to create tensors on
             
         Returns:
@@ -204,15 +205,29 @@ class MusicElementDetector(nn.Module):
         """
         anchors = {}
         
-        # Generate anchors for each scale
-        for scale, config in self.anchors_config.items():
-            feature_size = feature_sizes[scale]
-            anchors[scale] = self._generate_anchors(
-                feature_size, image_size, config['scales'], config['ratios'], device
-            )
+        # Check if feature_sizes is a dictionary with 'scale' key or a mapping of scale names to sizes
+        if 'scale' in feature_sizes:
+            # Single scale provided, generate anchors for each scale
+            for scale, config in self.anchors_config.items():
+                anchors[scale] = self._generate_anchors(
+                    feature_sizes['scale'], image_size, config['scales'], config['ratios'], device
+                )
+        else:
+            # Multiple scales provided
+            scale_map = {
+                'macro': 'p5',
+                'mid': 'p4',
+                'micro': 'p3'
+            }
+            
+            for scale, config in self.anchors_config.items():
+                if scale_map[scale] in feature_sizes:
+                    anchors[scale] = self._generate_anchors(
+                        feature_sizes[scale_map[scale]], image_size, config['scales'], config['ratios'], device
+                    )
         
         return anchors
-    
+        
     def _generate_anchors(
         self,
         feature_size: Tuple[int, int],

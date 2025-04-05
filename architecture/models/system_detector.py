@@ -68,7 +68,13 @@ class SystemDetector(nn.Module):
         
         return cls_scores, bbox_preds
     
-    def get_anchors(self, feature_size: Tuple[int, int], image_size: Tuple[int, int], device: str = 'cpu') -> torch.Tensor:
+    
+    def get_anchors(
+        self,
+        feature_size: Tuple[int, int],
+        image_size: Tuple[int, int],
+        device: str = 'cpu'
+    ) -> torch.Tensor:
         """
         Generate anchors for feature map of given size
         
@@ -121,11 +127,17 @@ class SystemDetector(nn.Module):
         num_anchors = len(self.prior_aspect_ratio)
         num_positions = shifts.shape[0]
         
-        all_anchors = anchors.view(1, num_anchors, 4) + shifts.view(num_positions, 1, 4)
-        all_anchors = all_anchors.view(-1, 4)
+        # [A, 4] -> [1, A, 4]
+        anchors = anchors.unsqueeze(0)
+        
+        # [P, 1, 4] -> [P, A, 4] -> [P*A, 4]
+        shifts = shifts.unsqueeze(1)
+        all_anchors = (anchors + shifts).reshape(-1, 4)
+        
+        # Print debug info
+        print(f"Generated {all_anchors.shape[0]} anchors for feature map of size {feature_size}")
         
         return all_anchors
-
 
 class StaffDetector(nn.Module):
     """

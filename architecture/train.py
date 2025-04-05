@@ -24,6 +24,8 @@ def parse_args():
     parser.add_argument('--resume', type=str, default=None, help='Resume from checkpoint')
     parser.add_argument('--output-dir', type=str, default='output', help='Output directory')
     parser.add_argument('--no-cuda', action='store_true', help='Disable CUDA')
+    parser.add_argument('--gpu', type=int, default=1, help='GPU device ID to use')
+    parser.add_argument('--subset', type=float, default=0.1, help='Fraction of dataset to use (0.1 for 10%)')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     return parser.parse_args()
 
@@ -40,7 +42,8 @@ def seed_everything(seed):
     torch.backends.cudnn.benchmark = False
 
 def get_model(config, device):
-    model = HierarchicalOMRModel(config['model'])
+    model = HierarchicalOMRModel(config)
+    # model._outer_config = config  # Store the outer config for access to inference settings
     model.to(device)
     return model
 
@@ -155,7 +158,8 @@ def train_one_epoch(model, train_loader, optimizer, scheduler, loss_fn, device, 
         outputs = model(images, batch)
         
         # Compute loss
-        loss, loss_dict = loss_fn(outputs, batch)
+        loss, loss_dict = model._compute_losses(outputs, batch)  # Get both the loss tensor and the dictionary
+
         
         # Backward pass
         optimizer.zero_grad()
@@ -301,16 +305,29 @@ def main():
     with open(output_dir / 'config.yaml', 'w') as f:
         yaml.dump(config, f)
     
-    # Set device
-    device = torch.device('cuda' if torch.cuda.is_available() and not args.no_cuda else 'cpu')
-    print(f'Using device: {device}')
+    # # Set device
+    # device = torch.device('cuda' if torch.cuda.is_available() and not args.no_cuda else 'cpu')
+    # print(f'Using device: {device}')
     
+    # Set device
+    if torch.cuda.is_available() and not args.no_cuda:
+        torch.cuda.set_device(args.gpu)
+        device = torch.device(f'cuda:{args.gpu}')
+        print(f'Using GPU device: {args.gpu}')
+    else:
+        device = torch.device('cpu')
+        print('Using CPU')
+        
     # Load class map
     class_map_path = Path(config['data']['class_map_file'])
+    class_map = None  # Initialize to None
     if class_map_path.exists():
         with open(class_map_path, 'r') as f:
             class_map = json.load(f)
-        class_names = [class_map[str(i)] for i in range(len(class_map))]
+        
+        # Convert class_map from {class_name: index} to {index: class_name}
+        inverted_class_map = {int(v): k for k, v in class_map.items()}
+        class_names = [inverted_class_map.get(i, f"Class_{i}") for i in range(max(inverted_class_map.keys()) + 1)]
     else:
         class_names = None
     
@@ -327,6 +344,12 @@ def main():
         class_map=class_map
     )
     
+    # Take a subset if requested
+    if args.subset < 1.0:
+        num_train = int(len(train_dataset) * args.subset)
+        indices = torch.randperm(len(train_dataset))[:num_train]
+        train_dataset = torch.utils.data.Subset(train_dataset, indices)
+
     val_dataset = OMRDataset(
         annotations_dir=config['data']['annotations_dir'],
         images_dir=config['data']['images_dir'],
@@ -336,8 +359,14 @@ def main():
         ),
         split='val',
         split_ratio=config['data']['split_ratio'],
-        class_map=train_dataset.class_map
+        class_map=train_dataset.class_map if hasattr(train_dataset, 'class_map') else class_map
     )
+    # Take a subset if requested
+    if args.subset < 1.0:
+        num_val = int(len(val_dataset) * args.subset)
+        indices = torch.randperm(len(val_dataset))[:num_val]
+        val_dataset = torch.utils.data.Subset(val_dataset, indices)
+
     
     # Save class map
     if not class_map_path.exists():

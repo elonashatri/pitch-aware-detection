@@ -51,10 +51,19 @@ class OMRDataset(Dataset):
         if self.class_map is None:
             # Create a default class map based on the dataset
             self.class_map = self._build_class_map()
-            
-        # Class frequencies (for class balancing during training)
+        else:
+            # If we're given a class map, ensure it's in the format {class_name: class_id}
+            # If it's in the format {class_id: class_name}, invert it
+            if all(isinstance(k, str) and isinstance(v, int) for k, v in class_map.items()):
+                # It's already in the right format
+                pass
+            elif all(isinstance(k, int) or (isinstance(k, str) and k.isdigit()) for k in class_map.keys()):
+                # It's in the wrong format, invert it
+                self.class_map = {v: int(k) if isinstance(k, str) else k for k, v in class_map.items()}
+        
+        # Initialize class counts dictionary
         self.class_counts = {cls_id: 0 for cls_id in self.class_map.values()}
-    
+                
     def _build_class_map(self) -> Dict[str, int]:
         """
         Build a class map from the dataset if not provided
@@ -274,8 +283,12 @@ class OMRDataset(Dataset):
                 ]
         
         # Convert to tensor if not done in transform
+        # if self.transform is None or not any(isinstance(t, ToTensorV2) for t in self.transform.transforms):
+        #     image = torch.tensor(image).permute(2, 0, 1).float() / 255.0
+        # Convert to tensor if not done in transform
         if self.transform is None or not any(isinstance(t, ToTensorV2) for t in self.transform.transforms):
-            image = torch.tensor(image).permute(2, 0, 1).float() / 255.0
+            # Explicitly normalize and convert to float
+            image = torch.tensor(image, dtype=torch.float32).permute(2, 0, 1) / 255.0
         
         return {
             'image': image,
